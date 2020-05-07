@@ -1,0 +1,130 @@
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Krona One', sans-serif;
+	font-size: 80px;
+	transition: -webkit-text-stroke-color 2s, color 2s;
+	color: #FFAA8A;
+}
+.title:hover{
+	color:transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.menu{
+	margin:24px;
+}
+.menu_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Bad Script', cursive;
+  	font-size: 80px;
+  	width: 100%;
+}
+
+#menu_home{
+	display: inline;
+}
+
+#menu_about{
+	display: inline;
+}
+
+#default-example{
+	display: inline;
+}
+
+
+.work_list{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Bad Script', cursive;
+  	font-size: 28px;
+}
+#menu_home:hover{
+	color:skyblue;
+}
+#menu_about:hover{
+	color:skyblue;
+}
+#menu_works:hover{
+	color:skyblue;
+}
+
+
+.landing_page{
+    width: 40%;
+    left:35%;
+    top:20%;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    position: absolute;
+    z-index: 1;
+    animation-name: fadeOut;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.content{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+.bar{
+    background: white;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 255, 0);
+}
+
+.bar span{
+    height: 5px;
+    float: left;
+    background:rgb(6, 22, 250);
+}
+
+div h3 {
+    font-family: cursive;
+    color: black;
+}
+
+
+.loading {
+    animation-name: loadingbar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes loadingbar {
+    0% {width: 0%;}
+    98% {width: 100%;}
+    100% {background: rgb(0, 255, 0); width: 100%;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    90% {opacity: 1;}
+    100%{opacity: 0; z-index: -1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    90% {opacity: 0;}
+    100%{opacity: 1;}
+}
